@@ -1,41 +1,48 @@
-* {
-    margin: 0; 
-    padding: 0;
-    box-sizing: border-box; 
+*{
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.header{
+
+section{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-principal);
+    border: solid 2px black;
+}
+.boton-whatsapp{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
     border: 2px solid black;
-    --background-principal: #12AED8 ; 
-    --color-letra: white; 
-    font-family:sans-serif;
-
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
 }
-.imagen-logo{
-    height: 10%;
-    width: 10%;
+.link:hover {
+    box-shadow: 0 0 2rem black;
+    cursor: pointer; 
 }
-
-body {
-    min-width: 100vw;
-}
-
 .header {
-    position: fixed; 
+    border: 2px solid black;
     top: 0;
     display: flex;
     width: 100%;
     justify-content: space-between; 
     align-items: center;
     background-color: var(--background-principal);
-    padding: 0 0.5rem 0 2rem; 
+    padding: 0 0.5rem 0 2rem;
 }
-
-.header h1 {
-    color: var(--color-letra)
-}
-
 .header .navbar {
+    border: 2px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: space-around; 
@@ -43,56 +50,135 @@ body {
     height: 100%;
     width: 30vw;
     padding: 1rem;
-}
-
-.navbar a {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 20%;
-    height: 50%;
-    border-radius: 50%;
-}
-
-.link img {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-
-.link:hover {
-    box-shadow: 0 0 2rem black;
-    cursor: pointer; 
-}
-
-section {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    width: 100%;
-    height: 100vh;
     background-color: var(--background-principal);
 }
 
-.contenedor-texto {
-    width: 40%;
+.navbar a {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 50%;
+}
+
+.botones-header a{
+    border: 2px solid black;
+    width: 20%;
+    height: 100%;
+    padding: 0.4rem;
+    background-color: #1EA82D;
+    color: white;
+    text-decoration: none;
+    border-radius: 0% 0% 50% 50% ;
+}
+
+.link img {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+}
+.botones-header img{
+    width: 1vw;
+    height: 1vh;
+}
+
+.div1-section1 {
+    border: solid 2px black;
+    width: 35%;
     color: var(--color-letra);
 }
-
-.contenedor-texto h2 {
-    font-size: 6rem;
-    font-weight: 600; 
+.div1-section1 h2 {
+    margin:10%;
+    border: solid 2px black;
+    font-size: 4rem;
+}
+.div1-section1 p{
+    margin: 5%;
+    border: solid 2px black;
+}
+.div2-section1 img{
+    border: solid 2px black;
+    width: 30vw;
+    height: 50vh;
+}
+#div-padre{
+    height: 90vh;
+    width: 80vw;
+    justify-content:center;
+    border: solid 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#div-padre h2{
+    margin: 5%;
+}
+.hijos{
+    height: 200px;
+    width: 300px;
+    margin: 5%;
+    border: solid 2px black;
+    padding: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px dotted rgb(0, 195, 255);
+}
+.hijos h3{
+    margin:  20%;
+}
+.servicios{
+    width: 100%;
+    border: solid 2px black;
+    text-align:center;
+    margin: 20px;
+    
+}
+#footer{
+    height: 10vh;
 }
 
-.seccion-uno{
-    border: 5px solid black;
-}
+.contenedor{  
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
 
-.seccion-dos{
-    border: 5px solid black;
 }
-
-.seccion-tres{
-    border: 5px solid black;
+.card{
+    width: 110%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px rgba(0,0,0,0.2);
+    cursor: default;
+    transition:  all 600ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+}
+.card img{
+    height: 40vw;
+    border-radius: 60%;
+}
+.card .contenido{
+    font-size: 15%;
+    padding: 10%;
+    text-align: center;
+}
+.titulo{
+    width:100%;
+    height: 20px;
+    text-align: center;
+    border: solid 2px gree;
+    font-weight: 350;
+    margin-bottom: 10px;
+ 
+}
+#footer img{
+    width: 2vw;
+    height: 3vh;
+}
+.boton-whatsapp img{
+    width: 100%;
+    height: 100%;
 }
