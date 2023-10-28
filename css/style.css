@@ -1,0 +1,204 @@
+/* configuracion basica de la ventana */
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* configuracion de la secciones */
+section{
+    
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-principal);
+    border: solid 2px black;
+}
+/* boton whatsapp */
+.boton-whatsapp{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border: 2px solid black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.link:hover {
+    box-shadow: 0 0 2rem black;
+    cursor: pointer; /* el puntero se convierte en una manito */
+}
+/* configuracion basica de header */
+.header {
+    border: 2px solid black;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Los elementos del contenedor se envian hacia los lados */
+    align-items: center;
+    background-color: var(--background-principal);
+    padding: 0 0.5rem 0 2rem; /*TOP: 0px RIGHT: 8px BOTTOM: 0px LEFT: 32px*/
+}
+/* nvbar (logo y nombre) */
+.header .navbar {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Se le da un margen igual a cada elemento del contenedor */
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+    padding: 1rem;
+    background-color: var(--background-principal);
+}
+/* imagen y link de oreo en navbar */
+.navbar a {
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 50%;
+}
+/* botones de navegacion */
+.botones-header a{
+    border: 2px solid black;
+    width: 20%;
+    height: 100%;
+    padding: 0.4rem;
+    background-color: rgb(112, 56, 9);
+    color: white;
+    text-decoration: none;
+    border-radius: 0% 0% 50% 50% ;
+}
+/* configuracion de links img */
+.link img {
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+}
+/* boton de footer */
+.botones-header img{
+    width: 1vw;
+    height: 1vh;
+}
+
+/* primer div1-secion1 */
+.div1-section1 {
+    border: solid 2px black;
+    width: 35%;
+    color: var(--color-letra);
+}
+/* configuracion del titulo de div1-secion1 */
+.div1-section1 h2 {
+    margin:10%;
+    border: solid 2px black;
+    font-size: 4rem;
+    font-weight: 600; /*Que tanta negrilla se quiere*/
+}
+/* parrafo */
+.div1-section1 p{
+    margin: 5%;
+    border: solid 2px black;
+}
+/* tamaño de la imagen */
+.div2-section1 img{
+    border: solid 2px black;
+    width: 30vw;
+    height: 50vh;
+}
+/* section2 
+creamos un padre que contenga todos los divs*/
+#seccion2{
+    
+    flex-direction: column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid red;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+.contenedor-servicios .servicio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    row-gap: 3rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+
+#footer{
+    height: 10vh;
+}
+
+/* section3 */
+#section3{ 
+    flex-direction:column;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.contenedor-Colaboradores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid red;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+.contenedor-Colaboradores .colaborador{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    row-gap: 3rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.colaborador img {
+    width: 10vw;
+    height: 45vh;
+}
+#footer img{
+    width: 2vw;
+    height: 3vh;
+}
+.boton-whatsapp img{
+    width: 100%;
+    height: 100%;
+}
+.servicios-link{
+    display: none;
+}
+.colaboradores-link{
+    display: none;
+}
+.vermas-link{
+    display: inline;
+}
